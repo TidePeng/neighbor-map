@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Neighborhood</title>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="col-md-2 col-xs-12">
+                <input class="form-control upspace" placeholder="Search…" type="search" autocomplete="off" data-bind="value: searchValue, valueUpdate: 'keyup'">
+                <div class="list-group" data-bind="foreach: markers">
+                    <a class="list-group-item" href="#" data-bind="text: name, click: $root.listClick"></a>
+                </div>
+                <img class="img-responsive" src="img/poweredby-one-color-cdf070cc7ae72b3f482cf2d075a74c8c.png" alt="foursquare logo">
+            </div>
+            <div id='map' class="col-md-10 col-xs-12"></div>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/knockout/dist/knockout.js"></script>
+        <script src="js/app.js"></script>
+
+        <script defer 
+            src='http://api.map.baidu.com/api?v=2.0&ak=4AWWdVSDKif1cl6yaCX2akxTbsjU56LG&callback=initMap'
+            onerror="mapError()">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "neighbor-map",
+  "authors": [
+    "''TidePeng'' <''tpeng158@gamil.com''>"
+  ],
+  "description": "neighbor map",
+  "main": "",
+  "keywords": [
+    "neighbor",
+    "map",
+    "wuchang"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "knockout": "^3.4.2"
+  }
+}
